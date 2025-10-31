@@ -3,12 +3,18 @@ Analyse des cours de la bourse de Paris (Euronext)
 
 Script en python qui récupère la composition des indices officiels directement sur le site euronext, puis télécharge les cours de ces actions pour les intégrer dans une base SQLITE facile d'accès  
 
-Installation:  
+## Installation:  
 pip install yfinance  
 pip install pdfplumber  
 pip install pandas  
 
-Récupération des pdf depuis euronext:  
+## Utilisation:  
+python maj_cours_euronext.py
+
+## Résultat:  
+Base SQLITE cac40_data.db avec les données des actions à jour
+
+## Récupération des pdf depuis euronext:  
 1️⃣ **CAC 40** (Baromètre principal de l’économie française)  
 2️⃣ **CAC Next 20** (Indicateur des entreprises en forte croissance ou en voie d’entrer dans le CAC 40)  
 3️⃣ **CAC Mid 60** (Reflète la performance des ETI françaises  
