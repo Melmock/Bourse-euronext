@@ -57,7 +57,7 @@
     Croissance régulière : Progression constante avec le temps  
     Résilience : Seulement 2 actions en perte constante (CA.PA, RNO.PA)  
 
-## Actions à Problèmes
+## ⚠️ Actions à Problèmes
     CA.PA : Perte persistante (-645 € à 60 mois)  
     RNO.PA : Perte persistante (-741 € à 60 mois)  
     4 actions sans mouvement : KER.PA, MC.PA, OR.PA, RMS.PA (Prix supérieur à 100 € mise de base chaque mois)
@@ -69,17 +69,18 @@
 
 # Conclusion Stratégique
 La stratégie DCA sur le CAC40 reste extrêmement performante sur 2020-2025 :  
-**✅ Avantages Confirmés**
+**✅ Avantages Confirmés**  
     Efficacité de la diversification  
     Effet temps déterminant  
     Robustesse face aux volatilités  
 
-**🔄 Améliorations Possibles**
+**🔄 Améliorations Possibles**  
     Exclusion sélective des 2 actions chroniquement perdantes  
     Réinvestissement des dividendes non capturé  
     Analyse sectorielle pour optimiser l'allocation  
 
-Recommandation : Maintenir la stratégie avec horizon 10 ans, en excluant CA.PA et RNO.PA pour améliorer encore la performance.
+Recommandation :  
+    Maintenir la stratégie avec horizon 10 ans, en excluant CA.PA et RNO.PA pour améliorer encore la performance.
 
   
 ![Résultats sur 10 ans](resultats_sur_10_ans.png "Résultats sur 10 ans").
