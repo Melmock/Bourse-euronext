@@ -55,16 +55,16 @@
     Progression significative : De 9 519 € (6 mois) à 76 342 € (60 mois) - une multiplication par 8
     Croissance régulière : La performance s'améliore continuellement avec le temps
 
-# Durée d'Investissement Idéale**
-## La durée de 60 mois (5 ans) apparaît comme optimale car :**
+# Durée d'Investissement Idéale
+## La durée de 60 mois (5 ans) apparaît comme optimale car :
     Gain total le plus élevé (76 342 €)
     Performance cohérente sur la majorité des actions
     Meilleure résilience face aux fluctuations de marché
-## Actions Performantes :**
+## Actions Performantes :
     Top performers : GLE.PA (+10 884 €), ENGIE.PA (+6 189 €), CS.PA (+5 175 €)
     Consistance : La plupart des actions montrent une progression régulière
     Secteurs porteurs : Banque (GLE.PA, BNP.PA), Énergie (ENGIE.PA), Luxe (CS.PA)
-## Actions à Problèmes:**
+## Actions à Problèmes:
     Pertes persistantes : DSY.PA, EDEN.PA, TEP.PA, ERF.PA
     Actions sans gain : KER.PA, MC.PA, OR.PA, RMS.PA (4 actions stables)
     Risque décroissant : Seulement 7 actions en perte après 60 mois vs 6 après 6 mois
@@ -81,13 +81,13 @@
     Concentration sectorielle : Surveiller l'exposition aux secteurs cycliques
 
 # Conclusion Stratégique
-La stratégie DCA sur le CAC 40 est globalement rentable avec un horizon de 5 ans :
-    🔸 Risque modéré : 85-90% de chances de gain sur la période
-    🔸 Durée optimale : 60 mois pour maximiser les rendements, normal car on est sur un marché porteur depuis 5 ans
-    🔸 Approche recommandée : Maintenir la stratégie en évitant les actions chroniquement perdantes
+La stratégie DCA sur le CAC 40 est globalement rentable avec un horizon de 5 ans :  
+    🔸 Risque modéré : 85-90% de chances de gain sur la période  
+    🔸 Durée optimale : 60 mois pour maximiser les rendements, normal car on est sur un marché porteur depuis 5 ans  
+    🔸 Approche recommandée : Maintenir la stratégie en évitant les actions chroniquement perdantes  
 
-#Recommandation finale :
-    Poursuivre le DCA en ciblant les 5 à 10 actions les plus performantes du CAC 40 
-    avec un horizon de 3-5 ans pour optimiser le ratio risque/rendement.
-
+# Recommandation finale :
+    Poursuivre le DCA en ciblant les 5 à 10 actions les plus performantes du CAC 40  
+    avec un horizon de 3-5 ans pour optimiser le ratio risque/rendement  
+  
 ![Résultats sur 5 ans](resultats_sur_5_ans.png "Résultats sur 5 ans").
