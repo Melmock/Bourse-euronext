@@ -23,7 +23,8 @@ et déterminer la durée de détention optimale.
     Évaluer le Risque : Mesurer le taux de réussite, l'amplitude des pertes et la volatilité.
     Déterminer la Durée Idéale : Identifier la durée offrant le meilleur compromis rentabilité/taux de réussite.
 
-========================================================================================================================
+============================================================================
+
 **Biais et Limites de la Méthode d'Analyse**
 
 **Biais de Survie (Survivorship Bias)**
