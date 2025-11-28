@@ -23,3 +23,9 @@ Base SQLITE cac40_data.db avec les données des actions à jour
 6️⃣ **SBF 120** (CAC 40 + CAC Next 20 + CAC Mid 60)  
 7️⃣ **CAC All-Tradable** (Donne la vision globale de la performance du marché parisien)  
 8️⃣ **CAC Large 60** (Benchmark, ETF, mesure de la tendance “grandes valeurs”)  
+
+---
+Méthode 1 - Achat de toutes les actions du CAC40 ! [Lien](/dca_cac40/dca_cac40.md")
+Méthode 2 - Achat d'une action du CAC40 basé sur le volume ' ! [Lien](/dca_v0.1/dca_v0.1.md")
+--
+Les Performances passées ne préjuge pas des résultats futurs* ceci n'est pas un conseil en investissement.
