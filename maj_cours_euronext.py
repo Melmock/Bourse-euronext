@@ -46,11 +46,23 @@ def create_table(conn):
     UNIQUE(date, action)
     );
     """
+    create_index="""
+    CREATE INDEX IF NOT EXISTS idx_actions_date ON actions(date);
+    CREATE INDEX IF NOT EXISTS idx_actions_action_date ON actions(action, date);
+    CREATE INDEX IF NOT EXISTS idx_actions_year_month ON actions(
+        strftime('%Y', date), 
+        strftime('%m', date)
+    );
+    CREATE INDEX IF NOT EXISTS idx_cac40 ON cac40_composition(
+        nom_indice, date_maj, ticker_yahoo
+    );
+    """
 
     try:
         cursor = conn.cursor()
         cursor.execute(create_table_cac40_composition)
         cursor.execute(create_table_sql_actions)
+        cursor.executescript(create_index)
         conn.commit()   
     except sqlite3.Error as e:
         print(e)
@@ -157,6 +169,7 @@ def extract_euronext_from_pdf(url_pdf,conn):
     df_data['ticker_yahoo'] = df_data['ticker_yahoo'].replace('SOLB.PA', 'SOLB.BR')
     df_data['ticker_yahoo'] = df_data['ticker_yahoo'].replace('APAM.PA', 'APAM.AS')
     df_data['ticker_yahoo'] = df_data['ticker_yahoo'].replace('MT.PA', 'MT.AS')
+    df_data['ticker_yahoo'] = df_data['ticker_yahoo'].replace('CGM.PA', 'ALCGM.PA')
     df_data['Nom Indice'] = nom_indice
        
     # Préparer les données pour l'insertion
@@ -187,7 +200,7 @@ def extract_euronext_from_pdf(url_pdf,conn):
 def extract_and_store_actions(conn):
     try:
         cursor = conn.cursor()
-        cursor.execute("SELECT ticker_yahoo FROM cac40_composition group by ticker_yahoo order by ticker_yahoo")
+        cursor.execute("SELECT ticker_yahoo FROM cac40_composition where weight_percent>=0 group by ticker_yahoo order by ticker_yahoo")
         list_actions = cursor.fetchall()
         for action in list_actions:
             action_cherchee=action[0]
@@ -218,7 +231,7 @@ def extract_and_store_actions(conn):
                 print(f"Aucune donnée existante pour {action_cherchee}, extraction complète.")
             historical_data = ticker.history(period=period, interval="1d")
             historical_data['action'] = action_cherchee
-            
+ 
             # Préparer les données pour l'insertion
             data_to_insert = []
             for id, row in historical_data.iterrows():
@@ -285,7 +298,7 @@ extract_euronext_from_pdf("https://live.euronext.com/sites/default/files/documen
 # Type d’entreprises : Small caps.
 extract_euronext_from_pdf("https://live.euronext.com/sites/default/files/documentation/index-composition/CAC_Small_Index_Composition.pdf",conn)
 
-# CAC Mid & Small
+# 5️⃣ CAC Mid & Small
 # Composition : Combine les entreprises du CAC Mid 60 et du CAC Small.
 # Utilité :
 #   Représente globalement le segment des valeurs moyennes et petites.
